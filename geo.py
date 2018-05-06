@@ -10,7 +10,7 @@ endereco = open("enderecos.txt")
 for line in endereco:
     sleep(2)
     from geopy.geocoders import GoogleV3
-    geolocator = GoogleV3(api_key=' AIzaSyDMAvSZhXqjFrHHwJyAVWckGuluXaPWzPY')
+    geolocator = GoogleV3(api_key='')
     location = geolocator.geocode(str(line), timeout=100)
     if location:
         lat=location.latitude
