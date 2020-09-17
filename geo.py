@@ -1,4 +1,4 @@
-﻿# coding=utf-8
+#coding=utf-8
 #BrunaCandeia
 #Github https://github.com/bcandeia
 
