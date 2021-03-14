@@ -1,6 +1,7 @@
 O QUE É GEOCODIFICAÇÃO?
 
-Geocodificação é o processo de conversão de endereços como (445, Avenida Barao do Triunfo, Varadouro, Joao Pesssoa, Paraiba, 58010400) em coordenadas geográficas (Latitude: -7.1170654 e Longitude: -34.887439), os quais podem ser utilizados como marcadores em um mapa ou para posicionar o mapa, propriamente dito.
+Geocodificação é o processo de conversão de endereços como (445, Avenida Barao do Triunfo, Varadouro, Joao Pesssoa, Paraiba, 58010400) em coordenadas geográficas
+(Latitude: -7.1170654 e Longitude: -34.887439), os quais podem ser utilizados como marcadores em um mapa ou para posicionar o mapa, propriamente dito.
 
 O Google possui um solução de Geocodificação através da API Geocoding, através da API é possivel acessar os servidores da Google de forma direta por meio de uma solicitação HTTP.
 
