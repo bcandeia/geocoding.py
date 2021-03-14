@@ -13,7 +13,7 @@ coordendas geográficas. Caso não saiba como executar o código, é possível s
 .
 .
 --------------------------------------------------------------------------------
-1. Criar** um ambiente virtual (diretório) através do Prompt CMD      **//Recomendo a criação do ambiente no Disco Local (C:)
+1. Criar** um ambiente virtual (diretório) através do Prompt CMD  **//Recomendo a criação do ambiente no Disco Local (C:)
 >>>python -m venv <nomedoambientevirtual>
 
 2. Entrar no ambiente virtual recém criado
