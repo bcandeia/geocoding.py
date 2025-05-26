@@ -1,5 +1,5 @@
 #coding=utf-8
-#BrunaCandeia
+#@bcandeia e @nathaliaolisil 
 #Github https://github.com/bcandeia
 
 from time import sleep
