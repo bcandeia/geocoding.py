@@ -1,4 +1,4 @@
-O QUE É GEOCODIFICAÇÃO?
+# O QUE É GEOCODIFICAÇÃO?
 
 📝 Este código acompanha a publicação no LinkedIn:
 [Geocodificação de Endereços: a melhor geotecnologia de todos os tempos da última semana](https://www.linkedin.com/pulse/geocodifica%C3%A7%C3%A3o-de-endere%C3%A7os-melhor-geotecnologia-todos-bruna-candeia/)
@@ -13,8 +13,7 @@ Google de forma direta por meio de uma solicitação HTTP.
 O código aqui desenvolvido é uma solução em Python utilizando a API Geocoding para a conversão dos endereços textuais em
 coordenadas geográficas.
 
---------------------------------------------------------------------------------
-COMO RODAR O CÓDIGO
+## COMO RODAR O CÓDIGO
 
 1. Criar um ambiente virtual (diretório) através do Prompt CMD
    >>>python -m venv <nomedoambientevirtual>
@@ -55,8 +54,7 @@ COMO RODAR O CÓDIGO
 O resultado é salvo automaticamente em "coord_finais.txt", no mesmo diretório, contendo cada
 endereço e suas respectivas coordenadas (ou uma indicação de erro/não encontrado).
 
---------------------------------------------------------------------------------
-ESTRUTURA DO CÓDIGO
+## ESTRUTURA DO CÓDIGO
 
 O script está organizado em uma única função, `geocodificar_enderecos()`, responsável por:
 - Ler a chave da API a partir da variável de ambiente GOOGLE_API_KEY
@@ -67,8 +65,7 @@ O script está organizado em uma única função, `geocodificar_enderecos()`, re
   demais endereços
 - Gravar os resultados no arquivo de saída
 
---------------------------------------------------------------------------------
-REFERÊNCIAS
+## REFERÊNCIAS
 
 Google Developers. Geocoding API: Get Started. Disponível em:
 <https://developers.google.com/maps/documentation/geocoding/start?hl=pt>
