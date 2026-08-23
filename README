@@ -1,5 +1,8 @@
 O QUE É GEOCODIFICAÇÃO?
 
+📝 Este código acompanha a publicação no LinkedIn:
+[Geocodificação de Endereços: a melhor geotecnologia de todos os tempos da última semana](https://www.linkedin.com/pulse/geocodifica%C3%A7%C3%A3o-de-endere%C3%A7os-melhor-geotecnologia-todos-bruna-candeia/)
+
 Geocodificação é o processo de conversão de endereços como (445, Avenida Barao do Triunfo, Varadouro, Joao Pessoa, Paraiba,
 58010400) em coordenadas geográficas (Latitude: -7.1170654 e Longitude: -34.887439), os quais podem ser utilizados como
 marcadores em um mapa ou para posicionar o mapa, propriamente dito.
