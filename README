@@ -1,43 +1,74 @@
 O QUE É GEOCODIFICAÇÃO?
 
-Geocodificação é o processo de conversão de endereços como (445, Avenida Barao do Triunfo, Varadouro, Joao Pesssoa, Paraiba,
+Geocodificação é o processo de conversão de endereços como (445, Avenida Barao do Triunfo, Varadouro, Joao Pessoa, Paraiba,
 58010400) em coordenadas geográficas (Latitude: -7.1170654 e Longitude: -34.887439), os quais podem ser utilizados como
 marcadores em um mapa ou para posicionar o mapa, propriamente dito.
 
-O Google possui um solução de Geocodificação através da API Geocoding, através da API é possivel acessar os servidores da
+O Google possui uma solução de Geocodificação através da API Geocoding, através da qual é possível acessar os servidores da
 Google de forma direta por meio de uma solicitação HTTP.
 
-O código aqui desenvolvido é uma solução em Python utilizando da API Geocoding para a conversão dos endereços textuais em
-coordendas geográficas. Caso não saiba como executar o código, é possível seguir os passos descritos a seguir:
-.
-.
-.
+O código aqui desenvolvido é uma solução em Python utilizando a API Geocoding para a conversão dos endereços textuais em
+coordenadas geográficas.
+
 --------------------------------------------------------------------------------
-1. Criar** um ambiente virtual (diretório) através do Prompt CMD  **//Recomendo a criação do ambiente no Disco Local (C:)
->>>python -m venv <nomedoambientevirtual>
+COMO RODAR O CÓDIGO
+
+1. Criar um ambiente virtual (diretório) através do Prompt CMD
+   >>>python -m venv <nomedoambientevirtual>
 
 2. Entrar no ambiente virtual recém criado
->>>C:\>cd <nomedoambientevirtual>
+   >>>C:\>cd <nomedoambientevirtual>
 
 3. Ativar ambiente virtual
->>>scripts\activate
+   >>>scripts\activate
 
-4. Instalar geopy
->>>pip install geopy
+4. Instalar as dependências
+   >>>pip install geopy
 
-5. Criar um novo diretório com: código (geo.py); arquivo de endereços/entrada (enderecos.txt); e arquivo coordenadas/saída (coord_finais.txt)
-<novodiretorio>
+5. Obter uma chave de API do Google Geocoding, seguindo o guia oficial:
+   https://developers.google.com/maps/documentation/geocoding/get-api-key?hl=pt
 
-6. Entrar no novo diretório com o código e os arquivos de entrada e saída
->>>C:\nomedoambientevirtual>cd novodiretorio
+6. Configurar a chave como variável de ambiente (nunca coloque a chave direto no código):
 
-7. Rodar o código
->>>py <geo.py>
+   Windows (cmd):
+   >>>set GOOGLE_API_KEY=sua_chave_aqui
+
+   Windows (PowerShell):
+   >>>$env:GOOGLE_API_KEY="sua_chave_aqui"
+
+   Linux/Mac:
+   >>>export GOOGLE_API_KEY=sua_chave_aqui
+
+7. Criar um novo diretório com: código (geo.py) e arquivo de endereços/entrada (enderecos.txt),
+   um endereço por linha.
+   <novodiretorio>
+
+8. Entrar no novo diretório com o código e o arquivo de entrada
+   >>>C:\nomedoambientevirtual>cd novodiretorio
+
+9. Rodar o código
+   >>>python geo.py
+
+O resultado é salvo automaticamente em "coord_finais.txt", no mesmo diretório, contendo cada
+endereço e suas respectivas coordenadas (ou uma indicação de erro/não encontrado).
+
 --------------------------------------------------------------------------------
-.
-.
-.
+ESTRUTURA DO CÓDIGO
+
+O script está organizado em uma única função, `geocodificar_enderecos()`, responsável por:
+- Ler a chave da API a partir da variável de ambiente GOOGLE_API_KEY
+- Ler os endereços do arquivo de entrada, linha a linha
+- Consultar a Google Geocoding API para cada endereço, respeitando um intervalo entre
+  requisições
+- Tratar erros de timeout ou falha de serviço sem interromper o processamento dos
+  demais endereços
+- Gravar os resultados no arquivo de saída
+
+--------------------------------------------------------------------------------
 REFERÊNCIAS
 
-Google Developers. Geocoding API: Get Started. 2021. Disponível em: <https://developers.google.com/maps/documentation/geocoding/start?hl=pt>
-Google Developers. Geocoding API: Get an API Key. 2021. Disponível em: <https://developers.google.com/maps/documentation/geocoding/get-api-key?hl=pt>
+Google Developers. Geocoding API: Get Started. Disponível em:
+<https://developers.google.com/maps/documentation/geocoding/start?hl=pt>
+
+Google Developers. Geocoding API: Get an API Key. Disponível em:
+<https://developers.google.com/maps/documentation/geocoding/get-api-key?hl=pt>
