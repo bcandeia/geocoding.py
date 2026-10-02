@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+
+# arquivos de saída gerados pelos scripts
+2-comparacao-google-geocodebr/dados/comparacao_resultados.csv
