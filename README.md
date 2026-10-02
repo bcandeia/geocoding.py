@@ -5,7 +5,6 @@ Geocodificação de endereços com Python — do script original à comparação
 📝 Este repositório acompanha a publicação no LinkedIn:
 [Geocodificação de Endereços: a melhor geotecnologia de todos os tempos da última semana](https://www.linkedin.com/pulse/geocodifica%C3%A7%C3%A3o-de-endere%C3%A7os-melhor-geotecnologia-todos-bruna-candeia/)
 
----
 
 ## Estrutura
 
@@ -22,7 +21,6 @@ geocoding.py/
         └── comparacao_resultados.csv      # saída gerada por comparar_geocoding.py
 ```
 
----
 
 ## 1. Google Geocoding API (`geo.py`)
 
@@ -43,7 +41,6 @@ $env:GOOGLE_API_KEY="sua_chave_aqui"          # Windows PowerShell
 python geo.py
 ```
 
----
 
 ## 2. Comparação: Google API vs. geocodebr
 
@@ -101,7 +98,6 @@ resultado dentro do município.
 > só sabemos que elas discordam, e com que frequência. A exceção é Coxixola,
 > onde a distância por si só já descarta o resultado do Google como plausível.
 
----
 
 ## Dependências
 
@@ -116,7 +112,6 @@ pip install geopy              # módulo 1
 pip install geocodebr[geo] polars  # módulo 2
 ```
 
----
 
 ## Referências
 
