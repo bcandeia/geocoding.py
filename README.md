@@ -4,7 +4,7 @@ Geocodificação de endereços brasileiros com Python — do script original, us
 
 📝 Este repositório acompanha duas publicações:
 - [Geocodificação de Endereços: a melhor geotecnologia de todos os tempos da última semana](https://www.linkedin.com/pulse/geocodifica%C3%A7%C3%A3o-de-endere%C3%A7os-melhor-geotecnologia-todos-bruna-candeia/) — o script original
-- *(em breve)* comparação Google vs. geocodebr em 9 municípios do Nordeste
+- [Publicação no LinkedIn](https://lnkd.in/p/etVtUUzc) comentando a ideia de comparar o resultado da Google vs. geocodebr em 9 municípios do Nordeste
 
 ## O script original: `geo.py`
 
@@ -111,10 +111,10 @@ pip install pandas matplotlib       # script 3
 
 ## Créditos e referências
 
-- Eloísa Torlig — publicação que me apresentou ao geocodebr
+- Eloísa Torlig — [publicação](https://www.linkedin.com/posts/eloisa-torlig_dadosabertos-ipea-rstats-share-7511532451274547200-GoIu/?utm_source=share&utm_medium=member_ios&rcm=ACoAACRTaMUBdvT01enCqo3uLqgcaR7R-LCym7I) que me apresentou ao geocodebr
 - Pereira, R. H. M.; Herszenhut, D. et al. [geocodebr](https://ipea.github.io/geocodebr/) — IPEA, com apoio do Instituto Todos pela Saúde (ITpS), 2026
 - Google Developers. [Geocoding API Overview](https://developers.google.com/maps/documentation/geocoding/start?hl=pt)
-- Araújo, T. L.; Candeia, B. A. et al. *Geocodificação de endereços e espacialização de dados através do módulo Geopy/Python e do Quantum GIS*. 2017.
+- Araújo, T. L.; Candeia, B. A. et al. [Geocodificação de endereços e espacialização de dados através do módulo Geopy/Python e do Quantum GIS](https://www.researchgate.net/publication/344082803_GEOCODIFICACAO_DE_ENDERECOS_E_ESPACIALIZACAO_DE_DADOS_ATRAVES_DO_MODULO_GEOPYPHYTON_E_DO_QUANTUM_GIS_APLICADO_AO_SISTEMA_DE_ALUNOS_INGRESSANTES_NO_IFPB_-_CAMPUS_JOAO_PESSOA_NOS_ANOS_DE_2004_2009_e_201). 2017.
 
 ---
 
