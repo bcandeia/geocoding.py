@@ -5,3 +5,4 @@ __pycache__/
 
 # arquivos de saída gerados pelos scripts
 2-comparacao-google-geocodebr/dados/comparacao_resultados.csv
+2-comparacao-google-geocodebr/dados/precisao_resultados.csv
